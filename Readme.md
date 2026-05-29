@@ -1,4 +1,3 @@
-```markdown
 # MAYDAY ✈️
 
 A terminal-based ADS-B flight tracker. Type a callsign, get live telemetry — altitude, speed, mach, position, vertical rate, aircraft type, registration, and emergency status. Refreshes in the background without blocking the UI.
