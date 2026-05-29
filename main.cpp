@@ -28,7 +28,7 @@ std::string welcome_screen(){
   box(win, 0, 0);
 
   wattron(win, COLOR_PAIR(1) | A_BOLD);
-  mvwprintw(win, 0, (win_wid - 14) / 2, " ADSB TRACKER ");
+  mvwprintw(win, 0, (win_wid - 14) / 2, " MAYDAY ");
   wattroff(win, COLOR_PAIR(1) | A_BOLD);
 
   wattron(win, COLOR_PAIR(2));
@@ -36,7 +36,7 @@ std::string welcome_screen(){
   wattroff(win, COLOR_PAIR(2));
 
   wattron(win, A_DIM);
-  mvwprintw(win, 4, 2, "e.g. IGO7453, AIC101");
+  mvwprintw(win, 4, 2, "e.g. IGO7453, AIC101 (Caps Only)");
   mvwprintw(win, win_hei - 1, (win_wid - 16) / 2, " [Enter] search ");
   wattroff(win, A_DIM);
 
@@ -115,7 +115,7 @@ int main(){
     box(win, 0, 0);
 
     wattron(win, COLOR_PAIR(1) | A_BOLD);
-    mvwprintw(win, 0, (win_wid - 12) / 2, " ADSB TRACK ");
+    mvwprintw(win, 0, (win_wid - 12) / 2, " MAYDAY ");
     wattroff(win, COLOR_PAIR(1) | A_BOLD);
 
     // fetching indicator top-right
