@@ -29,9 +29,11 @@ Built in C++ with ncurses.
 | cpp-httplib | HTTP client (header-only, bundled at `src/httplib.h`) |
 | nlohmann/json | JSON parsing (header-only) |
 
+
 ---
 
 ## Build
+
 
 ```bash
 clang++ -O3 -march=native -flto -ffast-math -Wall -Werror main.cpp -o mayday -lssl -lcrypto -lncurses -lpthread
